@@ -1,8 +1,10 @@
 # WatchTask
-WatchTask is designed to be an ultra light task runner, it allows you to easily run defined commands on changes to defined paths.
+
 [![GoDoc](https://godoc.org/github.com/Oliver-Fish/watchtask?status.png)](https://godoc.org/github.com/Oliver-Fish/watchtask)
 [![Build Status](https://travis-ci.org/Oliver-Fish/watchtask.svg?branch=master)](https://travis-ci.org/Oliver-Fish/watchtask)
 [![Go Report Card](https://goreportcard.com/badge/github.com/Oliver-Fish/watchtask)](https://goreportcard.com/report/github.com/Oliver-Fish/watchtask)
+
+WatchTask is designed to be an ultra light task runner, it allows you to easily run defined commands on changes to defined paths.
 
 ## Install
 ```
