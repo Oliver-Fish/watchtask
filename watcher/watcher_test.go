@@ -52,14 +52,14 @@ func TestRun(t *testing.T) {
 			if err != nil {
 				t.Fatal(err)
 			}
-			go func(t *testing.T) {
+			go func(t *testing.T, s []string) {
 				time.Sleep(time.Second * 1) //Give the watcher 1 second to prepare before editing the file
 				dat := "Writing some test data"
-				err := ioutil.WriteFile(v[0]+"/data", []byte(dat), 0700)
+				err := ioutil.WriteFile(s[0]+"/data", []byte(dat), 0700)
 				if err != nil {
 					t.Fatal(err)
 				}
-			}(t)
+			}(t, v)
 			task.Run()
 		})
 	}
