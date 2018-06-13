@@ -8,6 +8,7 @@ import (
 	"syscall"
 )
 
+//Task is used to reference spawned processes and to initally spawn them
 type Task struct {
 	CmdPath    string
 	Args       []string
