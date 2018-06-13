@@ -4,9 +4,9 @@ import "testing"
 
 func TestSpawnAndKill(t *testing.T) {
 	tt := map[string]*Task{
-		"Non-Blocking Command (No Args)":   &Task{CmdPath: "ls"},
-		"Non-Blocking Command (With Args)": &Task{CmdPath: "ls", Args: []string{"-lah", "~"}},
-		"Blocking Command":                 &Task{CmdPath: "ping", Args: []string{"localhost"}},
+		"Non-Blocking Command (No Args)":   {CmdPath: "ls"},
+		"Non-Blocking Command (With Args)": {CmdPath: "ls", Args: []string{"-lah", "~"}},
+		"Blocking Command":                 {CmdPath: "ping", Args: []string{"localhost"}},
 	}
 	for k, v := range tt {
 		t.Run(k, func(t *testing.T) {

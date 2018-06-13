@@ -42,8 +42,8 @@ func cleanup() {
 
 func TestRun(t *testing.T) {
 	tt := map[string][]string{
-		"Single-Path": []string{dataDir + "/dir1"},
-		"Multi-Path":  []string{dataDir + "/dir1", dataDir + "/dir2"},
+		"Single-Path": {dataDir + "/dir1"},
+		"Multi-Path":  {dataDir + "/dir1", dataDir + "/dir2"},
 	}
 	for k, v := range tt {
 		fmt.Println(k, v)
