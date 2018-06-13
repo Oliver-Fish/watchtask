@@ -21,7 +21,7 @@ watchtask -c "go run main.go"
 ```
 Run Multiple Commands on change
 ```
-watchtask -c "go run main.go","echo TestTest
+watchtask -c "go run main.go","echo TestTest"
 ```
 Run Command on specified path 
 ```
